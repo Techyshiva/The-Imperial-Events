@@ -1,0 +1,24 @@
+/* 
+colors: 
+rgb(219,191,118)
+rgb(244,226,214)
+rgb(177,136,214)
+rgb(105,30,175)
+rgb(70,18,118)
+
+
+
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(248, 226, 221);
+}

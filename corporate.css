@@ -1,0 +1,72 @@
+.slides {
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  color: white;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  pointer-events: none;
+}
+.slide:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(material/plan-events/carosel/plan-event-carosel1.png) center/cover;
+}
+.slide button {
+  display: none;
+}
+/*  */
+/* REMEMBER TO CHANGE THE URL OF THE CAROUSEL FOR YOUR OWN IMAGE AT BCG */
+/* EVERYTIME YOU OPEN NEW CSS FOR WORKING PAGE, REMEMBER TO CHANGE THE STYLE LINK OF HTML FOR THAT PPAGE IT SHOULD INCLUDE THE CURRENT PAGE CSS FILE ONLY, 
+REMOVE PREVIOUS CSS FILE OF PAGE WHEN WORKING ON NEW PAGE. EVERY HTML NEW PAGE SHOULD CONTAIN THE SELF PAGE LINK OF CSS ONLY
+LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
+/* DO YOUR STYLING BELOW */
+/* =========================================================
+   IMPORTANT WORKING INSTRUCTIONS (READ CAREFULLY)
+   =========================================================
+
+1) CAROUSEL BACKGROUND
+   - ALWAYS change the carousel background image URL
+     to YOUR OWN page images.
+   - Do NOT reuse images from index or other pages.
+
+2) PAGE-SPECIFIC CSS ONLY
+   - Every HTML page MUST link ONLY its OWN CSS file.
+   - Example:
+     plan-event.html  → plan-event.css
+     wedding.html     → wedding.css (if created)
+
+   ❌ Do NOT keep previous page CSS links.
+   ❌ Do NOT link multiple page CSS files together.
+
+3) SHARED STYLES
+   - Common styles (navbar, footer, buttons, utilities)
+     are already handled in:
+       → general.css
+       → media.css
+
+   - Do NOT rewrite shared styles unless instructed OR required.
+
+
+4) DO NOT TOUCH
+   - index.html
+   - style.css
+   - general.css
+   - media.css
+   - main.js (JS logic)
+   - Header structure
+   - main structure
+   - Footer structure
+   Without approval.
+
+
+  5) WRITE YOUR MEDIA QURIES AND ALL THE STYLES IN YOUR PAGE CSS FILE ONLY
+----------------------------------------------------------
+   WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
+   ========================================================= */
