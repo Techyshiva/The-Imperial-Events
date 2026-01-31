@@ -16,11 +16,9 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/plan-events/carosel/plan-event-carosel1.png) center/cover;
+    url(material/terms/carosel/testimonials1.png) center/cover;
 }
-.slide button {
-  display: none;
-}
+
 /*  */
 /* REMEMBER TO CHANGE THE URL OF THE CAROUSEL FOR YOUR OWN IMAGE AT BCG */
 /* EVERYTIME YOU OPEN NEW CSS FOR WORKING PAGE, REMEMBER TO CHANGE THE STYLE LINK OF HTML FOR THAT PPAGE IT SHOULD INCLUDE THE CURRENT PAGE CSS FILE ONLY, 
@@ -70,3 +68,52 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 ----------------------------------------------------------
    WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
    ========================================================= */
+.term-section {
+  height: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.term-container-box {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.term-update-date {
+  font-size: 1.6rem;
+  color: #666666;
+}
+
+.term-box-point h1 {
+  font-size: 2.6rem;
+  margin-top: 3.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(70, 18, 118);
+  text-align: left;
+}
+.term-box-point p {
+  font-size: 1.75rem;
+  margin-top: 1rem;
+  color: #444444;
+}
+.term-box-point-contact-no {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1280px) {
+  .term-container-box {
+    width: 85%;
+  }
+}
+@media (max-width: 1140px) {
+  .term-container-box {
+    width: 95%;
+  }
+}
+@media (max-width: 769px) {
+  .term-container-box {
+    width: 100%;
+  }
+}

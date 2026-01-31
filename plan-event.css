@@ -16,9 +16,9 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/plan-events/carosel/plan-event-carosel1.png) center/cover;
+    url(material/plan-events/carosel/carosel1.png) center/cover;
 }
-.slide button {
+.slide a {
   display: none;
 }
 /*  */
@@ -70,3 +70,204 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 ----------------------------------------------------------
    WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
    ========================================================= */
+.booking-form-section {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.booking-form-container {
+  margin-top: 10rem;
+  padding: 5rem 5rem;
+  background-color: rgb(255, 243, 236);
+  transition: all 0.3s ease-in-out;
+}
+
+.booking-form-max-width {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.booking-form-1 {
+  margin-bottom: 4rem;
+}
+.booking-form-2 {
+  margin-bottom: 0rem;
+  padding-top: 4rem;
+  border-top: 0.1px solid rgba(70, 18, 118, 0.241);
+}
+.form-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: rgb(70, 18, 118);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 1rem;
+}
+.form-group {
+  margin-bottom: 0rem;
+}
+
+.form-group label {
+  margin-right: 100%;
+  text-wrap: nowrap;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(70, 18, 118);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form-group label ion-icon {
+  position: relative;
+  top: 0.3rem;
+}
+
+.form-input {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  color: #333333;
+  background-color: rgb(255, 242, 233);
+  border: 0.2px solid rgba(70, 18, 118, 0.241);
+  border-radius: 0.5rem;
+}
+.event-type-span {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+.user-number-span {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+.user-add-info-span {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+/* submit btn */
+.submit-btn-box {
+  grid-column: 1 / -1;
+}
+.submit-btn {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 1.6rem;
+  background-color: #9d00ff; /* Bright purple from reference */
+  color: #fff;
+  border: none;
+  border-radius: 5rem; /* Pill shape like reference */
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #7b2cbf; /* Darker purple on hover */
+}
+/* submit message */
+/* =========================================================
+   SUCCESS MESSAGE STYLES – FINAL FIXED
+   ========================================================= */
+
+.booking-form-section {
+  position: relative;
+}
+
+/* Base containers */
+#form {
+  width: 100%;
+}
+
+#successMessage {
+  width: 80%;
+
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* START HIDDEN */
+  opacity: 0;
+  visibility: hidden;
+
+  /* POSITION OVER FORM */
+  position: absolute;
+  top: 0%;
+
+  background-color: rgb(255, 243, 236);
+  padding: 5rem;
+
+  transition: all 0.6s ease;
+}
+
+/* Form animation */
+#form {
+  transition: all 0.6s ease;
+}
+
+/* ACTIVE STATE */
+.show-success #form {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+}
+
+.show-success #successMessage {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Icon & text */
+.success-icon ion-icon {
+  font-size: 6rem;
+  color: #2ecc71;
+  margin-bottom: 2rem;
+}
+
+.success-message h3 {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1140px) {
+  .booking-form-max-width {
+    max-width: 90%;
+  }
+  #successMessage {
+    width: 90%;
+  }
+}
+@media (max-width: 769px) {
+  .booking-form-max-width {
+    max-width: 100%;
+  }
+  #successMessage {
+    width: 100%;
+  }
+  .form-content {
+    grid-template-columns: 1fr;
+  }
+}

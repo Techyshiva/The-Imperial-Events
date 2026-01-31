@@ -42,6 +42,7 @@
     column-gap: 10rem;
     row-gap: 10rem;
   }
+
   .services-card {
     width: 40rem;
   }
@@ -52,8 +53,25 @@
     gap: 0.1rem;
   }
 
+  .featured-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
+    row-gap: 6rem;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  .featured-card {
+    height: 35rem;
+    width: 38rem;
+  }
   .footer-content {
     grid-template-columns: 1fr 1fr;
+  }
+  .testimonial-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 1028px) {
@@ -65,6 +83,10 @@
   }
   .hero-heading-secondary {
     font-size: 1.8rem;
+  }
+  .why-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 }
 @media (max-width: 1000px) {
@@ -149,6 +171,46 @@
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s ease;
+  }
+
+  .featured-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 8rem;
+    row-gap: 6rem;
+  }
+  .featured-card {
+    height: 35rem;
+    width: 100%;
+  }
+  .featured-card-content {
+    height: 50%;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: -3rem;
+    left: 2rem;
+    right: 2rem;
+  }
+  .featured-card-content-primary {
+    font-size: 2.5rem;
+  }
+  .featured-card-content-secondary {
+    font-size: 1.8rem;
+  }
+  .featured-tag {
+    font-size: 1.4rem;
+  }
+
+  .featured-card-content-teritiary {
+    font-size: 1.6rem;
+  }
+  .why-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .testimonial-cards {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 580px) {

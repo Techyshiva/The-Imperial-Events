@@ -1,6 +1,9 @@
 /* 
 colors: 
+rgb(159, 119, 16)
+rgb(252, 207, 93)
 rgb(219,191,118)
+rgb(255, 236, 223)
 rgb(244,226,214)
 rgb(177,136,214)
 rgb(105,30,175)
@@ -21,4 +24,26 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: rgb(248, 226, 221);
+}
+
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.primary-header {
+  color: rgb(70, 18, 118);
+
+  font-size: 4.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.secondary-header {
+  font-size: 1.8rem;
+  opacity: 0.9;
+  color: rgb(105, 30, 175);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  font-family: "Playwrite NZ Basic", cursive;
 }
