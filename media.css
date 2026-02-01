@@ -35,6 +35,9 @@
   .max-width {
     max-width: 90rem;
   }
+  .container-max-width {
+    max-width: 85%;
+  }
   .services-cards {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
@@ -144,6 +147,9 @@
   .max-width {
     max-width: 70rem;
   }
+  .container-max-width {
+    max-width: 95%;
+  }
   .spline {
     position: absolute;
     top: 56%;
@@ -216,6 +222,9 @@
 @media (max-width: 580px) {
   .max-width {
     max-width: 60rem;
+  }
+  .container-max-width {
+    max-width: 100%;
   }
   .footer-content {
     grid-template-columns: 1fr;

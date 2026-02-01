@@ -16,11 +16,9 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/plan-events/carosel/plan-event-carosel1.png) center/cover;
+    url(material/services/carosel/carosel1.png) center/cover;
 }
-.slide button {
-  display: none;
-}
+
 /*  */
 /* REMEMBER TO CHANGE THE URL OF THE CAROUSEL FOR YOUR OWN IMAGE AT BCG */
 /* EVERYTIME YOU OPEN NEW CSS FOR WORKING PAGE, REMEMBER TO CHANGE THE STYLE LINK OF HTML FOR THAT PPAGE IT SHOULD INCLUDE THE CURRENT PAGE CSS FILE ONLY, 
@@ -70,82 +68,151 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 ----------------------------------------------------------
    WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
    ========================================================= */
-/* --- ZIG-ZAG SECTIONS --- */
-.service-section {
-  padding: 80px 8%;
+
+.wedding-section {
+  height: auto;
+  width: 100%;
+  margin-bottom: 8rem;
 }
-.service-block {
+.wedding-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
+.wedding-row.reverse {
+  direction: rtl;
+}
+
+.wedding-row.reverse > * {
+  direction: ltr;
+}
+.wedding-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.wedding-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.wedding-image img:hover {
+  transform: scale(1.1);
+}
+.wedding-image:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.wedding-content .wedding-heading {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: rgb(70, 18, 118);
+  margin-bottom: 0.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.wedding-content .wedding-heading:hover {
+  color: rgb(77, 18, 133);
+}
+.wedding-content .wedding-subheading {
+  font-size: 1.4rem;
+  color: rgb(159, 119, 16);
+  margin-bottom: 2.4rem;
+  font-family: "Playwrite NZ Basic", cursive;
+  transition: all 0.3s ease-in-out;
+}
+.wedding-content .wedding-subheading:hover {
+  color: rgb(199, 148, 19);
+}
+.wedding-desc {
+  font-size: 1.6rem;
+  margin-bottom: 2.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555555;
+  transition: all 0.3s ease-in-out;
+}
+.wedding-desc:hover {
+  color: #333333;
+}
+
+.wedding-btn {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  border-radius: 999px;
+  background-color: rgb(105, 30, 175);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.wedding-btn:hover {
+  background-color: rgb(70, 18, 118);
+  box-shadow: 0 10px 25px rgba(105, 30, 175, 0.1);
+}
+.wedding-icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: rgba(105, 30, 175, 0.12);
+
   display: flex;
   align-items: center;
-  margin-bottom: 120px;
-  gap: 40px;
-}
-.service-block:nth-child(even) {
-  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.img-wrap {
-  flex: 1.2;
-  position: relative;
+.wedding-icon ion-icon {
+  font-size: 2.6rem;
+  color: rgb(105, 30, 175);
 }
-.img-wrap img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid rgba(212, 163, 115, 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+.wedding-icon:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
-.content-wrap {
-  flex: 1;
-  background: var(--royal-purple);
-  padding: 50px;
-  border: 1px solid rgba(212, 163, 115, 0.2);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+.wedding-icon i {
+  font-size: 2.6rem;
+  color: rgb(105, 30, 175);
 }
-/* Overlap Effect */
-.service-block:nth-child(odd) .content-wrap {
-  margin-left: -80px;
-}
-.service-block:nth-child(even) .content-wrap {
-  margin-right: -80px;
+.wedding-icon:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.content-wrap span {
-  color: var(--text-gold);
-  font-size: 12px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 15px;
-}
-.content-wrap h3 {
-  font-family: "Cinzel Decorative", cursive;
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.content-wrap p {
-  color: #ccc;
-  font-size: 15px;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
-.premium-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  border: 1px solid var(--text-gold);
-  color: var(--text-gold);
-  text-decoration: none;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: 0.4s;
-}
-.premium-btn:hover {
-  background: var(--gold-gradient);
-  color: #000;
-  font-weight: 600;
+/* MEDIA */
+@media (max-width: 1000px) {
+  .wedding-row {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+
+  .wedding-row.reverse {
+    direction: ltr;
+  }
+
+  .wedding-image {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+
+  .wedding-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .wedding-row {
+    border-bottom: 1px solid rgba(70, 18, 118, 0.12);
+    padding-bottom: 4rem;
+  }
 }

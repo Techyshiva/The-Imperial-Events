@@ -16,7 +16,7 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/plan-events/carosel/plan-event-carosel1.png) center/cover;
+    url(material/protfolio/carousel1.avif) center/cover;
 }
 .slide button {
   display: none;
@@ -70,3 +70,147 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 ----------------------------------------------------------
    WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
    ========================================================= */
+
+.portfolio {
+  width: 100%;
+  /* 80px -> 8rem */
+  padding: 8rem 10%;
+
+  /* FIX FOR THE STRIP: -10px -> -1rem */
+  margin-top: -05rem;
+}
+
+/* The Grid Layout */
+.gridbox {
+  display: grid;
+  /* FORCE exactly 3 columns */
+  grid-template-columns: repeat(3, 1fr);
+  /* 30px -> 3rem */
+  gap: 3rem;
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+/* Individual Card Container */
+.portfolio-card {
+  position: relative;
+  /* 400px -> 40rem */
+  height: 40rem;
+  /* Kept in px as requested */
+  border-radius: 20px;
+  overflow: hidden;
+  /* Offsets converted to rem (0 1rem), blur kept in px (20px) */
+  box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect: Slight lift */
+.portfolio-card:hover {
+  /* -5px -> -0.5rem */
+  transform: translateY(-0.5rem);
+}
+
+/* The Image */
+.portfolio-card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Zoom image slightly on hover */
+.portfolio-card:hover .card-img {
+  transform: scale(1.05);
+}
+
+/* The Dark Gradient Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  /* 30px -> 3rem */
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+/* Text Styling */
+.card-category {
+  color: #ffc107;
+  font-size: 1rem; /* Already in rem */
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Playwrite NZ Basic", sans-serif;
+  /* 8px -> 0.8rem */
+  margin-bottom: 0.2rem;
+  /* 1px -> 0.1rem */
+  letter-spacing: 0.1rem;
+}
+
+.card-title {
+  color: rgb(244, 226, 214);
+  font-size: 3rem; /* Already in rem */
+  font-weight: 700;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 1280px) {
+  .portfolio {
+    /* Reduced side padding from 10% to 5% so cards don't look squished */
+    padding: 8rem 5%;
+  }
+}
+
+/* @ 1140px: Global font scales to 50%.
+   Major Breakpoint: Switch from 3 Columns to 2 Columns.
+   (Matches the 'services-cards' logic from your team leader) */
+@media (max-width: 1140px) {
+  .gridbox {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+    gap: 4rem; /* Slightly bigger gap for balance */
+  }
+}
+
+/* @ 769px: Tablet Portrait & Large Mobile.
+   Major Breakpoint: Switch to 1 Column. */
+@media (max-width: 769px) {
+  .portfolio {
+    padding: 6rem 5%; /* Reduce top/bottom padding */
+  }
+
+  .gridbox {
+    grid-template-columns: 1fr; /* 1 Column (Stacked) */
+    gap: 3rem;
+  }
+
+  /* Adjust card height for mobile scrolling */
+  .portfolio-card {
+    height: 35rem;
+  }
+
+  /* Make title slightly bigger for touch readability */
+  .card-title {
+    font-size: 3rem;
+  }
+}
+
+/* @ 480px: Small Mobile.
+   Global font scales to 40%.
+   We ensure the card fits comfortably on narrow screens. */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 4rem 2rem; /* Tight padding for small screens */
+  }
+
+  .portfolio-card {
+    height: 32rem; /* Compact card height */
+  }
+}

@@ -139,6 +139,12 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   border: 0.2px solid rgba(70, 18, 118, 0.241);
   border-radius: 0.5rem;
 }
+.form-input:focus {
+  outline: none;
+  border-color: #7b2cbf;
+  background-color: rgb(255, 242, 233);
+  box-shadow: 0 0 0 4px rgba(123, 44, 191, 0.1);
+}
 .event-type-span {
   grid-column: 1 / -1;
   width: 100%;
