@@ -16,7 +16,7 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/services/carosel/carosel1.png) center/cover;
+    url(material/services/card/card2.jpg) center/cover;
 }
 
 /*  */
@@ -38,7 +38,7 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
    - Every HTML page MUST link ONLY its OWN CSS file.
    - Example:
      plan-event.html  → plan-event.css
-     wedding.html     → wedding.css (if created)
+     corporatesrates.html     → corporatesrates.css (if created)
 
    ❌ Do NOT keep previous page CSS links.
    ❌ Do NOT link multiple page CSS files together.
@@ -69,12 +69,12 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
    WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
    ========================================================= */
 
-.wedding-section {
+.corporate-section {
   height: auto;
   width: 100%;
   margin-bottom: 8rem;
 }
-.wedding-row {
+.corporate-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
@@ -82,34 +82,34 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   margin-bottom: 10rem;
   margin-top: 10rem;
 }
-.wedding-row.reverse {
+.corporate-row.reverse {
   direction: rtl;
 }
 
-.wedding-row.reverse > * {
+.corporate-row.reverse > * {
   direction: ltr;
 }
-.wedding-image {
+.corporate-image {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
 
-.wedding-image img {
+.corporate-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
-.wedding-image img:hover {
+.corporate-image img:hover {
   transform: scale(1.1);
 }
-.wedding-image:hover {
+.corporate-image:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
-.wedding-content .wedding-heading {
+.corporate-content .corporate-heading {
   font-size: 3.8rem;
   font-weight: 700;
   color: rgb(70, 18, 118);
@@ -117,31 +117,31 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   transition: all 0.3s ease-in-out;
 }
-.wedding-content .wedding-heading:hover {
+.corporate-content .corporate-heading:hover {
   color: rgb(77, 18, 133);
 }
-.wedding-content .wedding-subheading {
+.corporate-content .corporate-subheading {
   font-size: 1.4rem;
   color: rgb(159, 119, 16);
   margin-bottom: 2.4rem;
   font-family: "Playwrite NZ Basic", cursive;
   transition: all 0.3s ease-in-out;
 }
-.wedding-content .wedding-subheading:hover {
+.corporate-content .corporate-subheading:hover {
   color: rgb(199, 148, 19);
 }
-.wedding-desc {
+.corporate-desc {
   font-size: 1.6rem;
   margin-bottom: 2.8rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #555555;
   transition: all 0.3s ease-in-out;
 }
-.wedding-desc:hover {
+.corporate-desc:hover {
   color: #333333;
 }
 
-.wedding-btn {
+.corporate-btn {
   display: inline-block;
   padding: 1.2rem 2.8rem;
   border-radius: 999px;
@@ -155,11 +155,11 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.wedding-btn:hover {
+.corporate-btn:hover {
   background-color: rgb(70, 18, 118);
   box-shadow: 0 10px 25px rgba(105, 30, 175, 0.1);
 }
-.wedding-icon {
+.corporate-icon {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -172,46 +172,55 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   transition: all 0.3s ease-in-out;
 }
 
-.wedding-icon ion-icon {
+.corporate-icon ion-icon {
   font-size: 2.6rem;
   color: rgb(105, 30, 175);
 }
-.wedding-icon:hover {
+.corporate-icon:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.wedding-icon i {
+.corporate-icon i {
   font-size: 2.6rem;
   color: rgb(105, 30, 175);
 }
-.wedding-icon:hover {
+.corporate-icon:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* MEDIA */
 @media (max-width: 1000px) {
-  .wedding-row {
+  .corporrate-row {
     grid-template-columns: 1fr;
     row-gap: 2rem;
     margin-bottom: 0;
     margin-top: 4rem;
   }
 
-  .wedding-row.reverse {
+  .corporrate-row.reverse {
     direction: ltr;
   }
 
-  .wedding-image {
+  .corporrate-image {
     width: 100%;
     height: 80%;
     overflow: hidden;
   }
 
-  .wedding-image img {
+  .corporrate-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .wedding-row {
+  .corporrate-row {
+    border-bottom: 1px solid rgba(70, 18, 118, 0.12);
+    padding-bottom: 4rem;
+  }
+  .corporrate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .corporrate-row {
     border-bottom: 1px solid rgba(70, 18, 118, 0.12);
     padding-bottom: 4rem;
   }

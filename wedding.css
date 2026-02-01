@@ -16,7 +16,7 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/services/carosel/carosel1.png) center/cover;
+    url(material/services/card/card1.png) center/cover;
 }
 
 /*  */
