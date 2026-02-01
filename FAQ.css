@@ -82,6 +82,11 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   margin-bottom: 2rem;
 }
 
+.faq-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .faq {
   background: white;
   border-radius: 12px;

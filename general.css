@@ -1,18 +1,20 @@
 /* 
 colors: 
-rgb(159, 119, 16)
-rgb(252, 207, 93)
-rgb(219,191,118)
-rgb(255, 236, 223)
-rgb(244,226,214)
-rgb(177,136,214)
-rgb(105,30,175)
-rgb(70,18,118)
+background-color: rgb(159, 119, 16);
+background-color: rgb(252, 207, 93);
+background-color: rgb(219,191,118);
+background-color: rgb(255, 243, 236);
+background-color: rgb(255, 236, 223);
+background-color: rgb(244,226,214);
+background-color: rgb(177,136,214);
+background-color: rgb(105,30,175);
+background-color: rgb(70,18,118);
 
 
 
 
 */
+/* UNIVERSAL CSS */
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +27,13 @@ body {
   overflow-x: hidden;
   background-color: rgb(248, 226, 221);
 }
-
+/* WIDTH BRAEK FIX */
 section {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+/* HEADER CSS */
 
 .primary-header {
   color: rgb(70, 18, 118);
@@ -46,4 +50,16 @@ section {
   font-weight: 500;
   margin-bottom: 0.8rem;
   font-family: "Playwrite NZ Basic", cursive;
+}
+
+/* REVEAL CSS */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
