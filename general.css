@@ -63,3 +63,14 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
+
+/*  */
+.spline {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* emergency fallback */
+.spline.show {
+  opacity: 1;
+}
