@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // Safety fallback for each spline
     setTimeout(() => {
       container.classList.add("show");
-    }, 400);
+    }, 1000);
   });
 });
 
