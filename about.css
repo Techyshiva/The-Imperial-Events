@@ -260,6 +260,7 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 .team-card {
   width: 20rem;
   transition: transform 0.5s ease;
+  text-decoration: none;
 
   text-align: center;
 }
@@ -272,7 +273,7 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   margin-bottom: 1.8rem;
   transition: transform 0.3s, border 0.3s;
 }
-.team-card img:hover {
+.team-card:hover img {
   transform: scale(1.1);
   border: 3px solid rgb(252, 207, 93);
 }
@@ -282,9 +283,13 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 .team-card h3 {
   font-size: 2.4rem;
   font-weight: 600;
-  color: rgb(96, 28, 159);
+  color: rgb(88, 26, 147);
   margin-bottom: 0.2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.team-card:hover h3 {
+  color: rgb(105, 30, 175);
+  transition: all 0.3s ease-in-out;
 }
 
 .team-card p {
@@ -292,7 +297,10 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   color: rgb(159, 119, 16);
   font-family: "Playwrite NZ Basic", cursive;
 }
-
+.team-card:hover p {
+  color: rgb(184, 137, 18);
+  transition: all 0.3s ease-in-out;
+}
 /* SCROLL REVEAL */
 .reveal {
   opacity: 0;

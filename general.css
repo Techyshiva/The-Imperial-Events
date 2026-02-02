@@ -55,8 +55,8 @@ section {
 /* REVEAL CSS */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 1s ease;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
 }
 
 .reveal.active {
