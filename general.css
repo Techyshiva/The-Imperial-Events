@@ -66,11 +66,5 @@ section {
 
 /*  */
 .spline {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-/* emergency fallback */
-.spline.show {
-  opacity: 1;
+  display: none;
 }
