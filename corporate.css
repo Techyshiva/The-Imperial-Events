@@ -189,38 +189,38 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 
 /* MEDIA */
 @media (max-width: 1000px) {
-  .corporrate-row {
+  .corporate-row {
     grid-template-columns: 1fr;
     row-gap: 2rem;
     margin-bottom: 0;
     margin-top: 4rem;
   }
 
-  .corporrate-row.reverse {
+  .corporate-row.reverse {
     direction: ltr;
   }
 
-  .corporrate-image {
+  .corporate-image {
     width: 100%;
     height: 80%;
     overflow: hidden;
   }
 
-  .corporrate-image img {
+  .corporate-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .corporrate-row {
+  .corporate-row {
     border-bottom: 1px solid rgba(70, 18, 118, 0.12);
     padding-bottom: 4rem;
   }
-  .corporrate-image img {
+  .corporate-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .corporrate-row {
+  .corporate-row {
     border-bottom: 1px solid rgba(70, 18, 118, 0.12);
     padding-bottom: 4rem;
   }
