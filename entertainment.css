@@ -69,6 +69,10 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
    WRITE YOUR PAGE STYLES BELOW THIS LINE ONLY
    ========================================================= */
 
+.hero-heading-primary {
+  font-size: 5.2rem;
+}
+
 .wedding-section {
   height: auto;
   width: 100%;

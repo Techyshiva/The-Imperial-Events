@@ -16,7 +16,7 @@
 }
 .slide:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(material/careers/carosel.jpg) center/cover;
+    url(material/careers/carousel01.jpeg) center/cover;
 }
 .slide button {
   display: none;
