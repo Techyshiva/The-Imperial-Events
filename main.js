@@ -66,3 +66,62 @@ function setActiveNav() {
 
 // Run after page loads
 window.addEventListener("DOMContentLoaded", setActiveNav);
+
+// GALLERY LOGIC
+// ===== GALLERY SLIDER =====
+
+const cards = document.querySelectorAll(".gallery-card img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn = document.querySelector(".lightbox .close");
+const nextBtn = document.querySelector(".lightbox .next");
+const prevBtn = document.querySelector(".lightbox .prev");
+
+let currentIndex = 0;
+
+// OPEN
+cards.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex = index;
+    showImage();
+    lightbox.classList.add("active");
+  });
+});
+
+// SHOW IMAGE
+function showImage() {
+  lightboxImg.src = cards[currentIndex].src;
+}
+
+// CLOSE
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+});
+
+// NEXT
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  showImage();
+});
+
+// PREV
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  showImage();
+});
+
+// CLOSE ON OUTSIDE CLICK
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
+});
+
+// KEYBOARD SUPPORT
+document.addEventListener("keydown", (e) => {
+  if (!lightbox.classList.contains("active")) return;
+
+  if (e.key === "Escape") lightbox.classList.remove("active");
+  if (e.key === "ArrowRight") nextBtn.click();
+  if (e.key === "ArrowLeft") prevBtn.click();
+});
