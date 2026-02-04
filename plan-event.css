@@ -199,7 +199,7 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 #successMessage {
   width: 80%;
 
-  min-height: 400px;
+  min-height: 100rem;
 
   display: flex;
   flex-direction: column;
@@ -208,8 +208,8 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   text-align: center;
 
   /* START HIDDEN */
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
 
   /* POSITION OVER FORM */
   position: absolute;
@@ -234,27 +234,27 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
 }
 
 .show-success #successMessage {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   transform: translateY(0);
 }
 
 /* Icon & text */
 .success-icon ion-icon {
-  font-size: 6rem;
+  font-size: 12rem;
   color: #2ecc71;
   margin-bottom: 2rem;
 }
 
 .success-message h3 {
-  font-size: 2.4rem;
+  font-size: 4.4rem;
   color: #333;
   margin-bottom: 1rem;
 }
 
 .success-message p {
   font-size: 1.6rem;
-  color: #666;
+  color: #999999;
 }
 
 /* MEDIA QUERIES */
@@ -275,5 +275,19 @@ LIKE IN THIS PLAN EVENTS HTML, IT CONTAINS ONLY plan-event.css LINK */
   }
   .form-content {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 769px) {
+  #successMessage {
+    min-height: 130rem;
+  }
+  .success-icon ion-icon {
+    font-size: 10rem;
+    margin-top: 14rem;
+  }
+  .success-message h3 {
+    font-size: 3.4rem;
+    color: #333;
+    margin-bottom: 1rem;
   }
 }

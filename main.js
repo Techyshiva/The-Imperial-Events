@@ -46,3 +46,23 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach((el) => observer.observe(el));
+
+// ===== ACTIVE NAV LINK SYSTEM =====
+function setActiveNav() {
+  const currentPage = window.location.pathname.split("/").pop();
+
+  const allLinks = document.querySelectorAll(
+    ".nav-link ul li a, .nav-link-mobile ul li a"
+  );
+
+  allLinks.forEach((link) => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+}
+
+// Run after page loads
+window.addEventListener("DOMContentLoaded", setActiveNav);
